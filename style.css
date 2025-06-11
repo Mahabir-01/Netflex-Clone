@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body,html {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jbg.jpg");
+    height: 70vh;
+    position: relative;
+    width: 100%;
+
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.80;
+    top: 0;
+    background-color: black;
+    position: absolute;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 80vw;
+    height: 62px;
+}
+
+nav img {
+    position: relative;
+    width: 105px;
+    z-index: 8;
+    color: rgb(162, 8, 8);
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'martel sans', sans-serif;
+    height: calc(90% - 52px);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 8;
+    position: relative;
+    gap: 25px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    position: relative;
+    z-index: 20;
+    background-color: rgba(192, 182, 191, 0.4);
+}
+
+.btn {
+    padding: 5px 9px;
+    font-weight: bold;
+    background-color: rgba(175, 171, 171, 0.4);
+    color: white;
+    border-radius: 3px;
+}
+
+.btn-red {
+    background-color: rgb(207, 2, 2);
+    color: white;
+    padding: 6px 25px;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.main input {
+    color: white;
+    padding: 8px 90px 9px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(67, 64, 64, 0.0);
+    border: 1px solid rgba(255, 255, 255, 0.597);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 70vw;
+    color: white;
+    /* flex-direction: column;
+    position: relative; */
+
+}
+
+@media screen and (max-width:1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg>img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 88px;
+    right: 79px;
+    width: 400px;
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.image video {
+    position: absolute;
+    /* width: 350px;
+   top: 48px;
+   left: 103px; */
+
+    top: 88px;
+    right: 109px;
+    width: 350px;
+
+
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0px;
+
+}
+
+section.first>div :nth-child(1) {
+    font-size: 43px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 18px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.faqbox {
+    transition: all 1s ease-in-out;
+    display: flex;
+    background-color: rgb(104, 102, 102);
+    padding: 20px;
+    max-width: 60vw;
+    margin: 15px auto;
+    justify-content: space-between;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.footer-item a {
+    color: white;
+}
+
+.faqbox:hover {
+    background-color: rgba(209, 206, 206, 0.133);
+}
+
+.footer {
+    color: white;
+    max-width: 90vw;
+    margin: 10px;
+
+
+}
+
+.footer-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* display: flex; */
+    flex-direction: column;
+    max-width: 70vw;
+    margin: 20px 20vw;
+    font-size: 13px;
+
+}
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 10px) and (max-width: 400px) {
+    nav span img {
+        width: 20px;
+    }
+
+    .secImg>img,
+    .secImg>video {
+        width: 100px;
+    }
+
+    .image>img,
+    .image>video {
+        width: 100px;
+    }
+}
