@@ -222,30 +222,78 @@ section.first > div :nth-child(2) {
 
  
 .footer {
-  color: white;
-  max-width: 90vw;
-  margin: 20px auto;
+  background-color: black;
+  color: #b3b3b3;
+  padding: 50px 20px;
+  max-width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer h3 {
   text-align: center;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .footer-item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  font-size: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.footer-item ul {
+  list-style: none;
+}
+
+.footer-item li {
+  margin: 8px 0;
 }
 
 .footer-item a {
-  color: white;
+  color: #b3b3b3;
   text-decoration: none;
-  transition: 0.3s;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
 }
 
 .footer-item a:hover {
-  text-decoration: underline;
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
 }
 
  
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 30px 10px;
+  }
+
+  .footer-item {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .footer-item a {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
  
 @media screen and (max-width: 992px) {
   nav img {
@@ -330,3 +378,4 @@ section.first > div :nth-child(2) {
     max-width: 90vw;
   }
 }
+
